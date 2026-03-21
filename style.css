@@ -1347,7 +1347,6 @@
   
   /* ===================== ADMIN DASHBOARD ===================== */
   .dash-layout {
-    display: flex;
     min-height: 100vh;
   }
   .dash-sidebar {
@@ -1426,11 +1425,12 @@
     white-space: nowrap;
   }
   .dash-main {
-    margin-left: 240px;
+    position: absolute;
+    top: 0;
+    left: 240px;
+    right: 0;
     min-height: 100vh;
     background: var(--bg);
-    min-width: 0;
-    width: calc(100% - 240px);
   }
   .dash-topbar {
     display: flex;
@@ -1625,9 +1625,8 @@
     outline: none;
   }
   @media (max-width: 900px) {
-    .dash-layout { flex-direction: column; }
     .dash-sidebar { width: 100%; height: auto; position: relative; }
-    .dash-main { margin-left: 0; width: 100%; }
+    .dash-main { position: relative; left: 0; top: 0; width: 100%; }
     .dash-stats { grid-template-columns: 1fr 1fr; }
     .dash-content { padding: 24px 20px; }
     .dash-topbar { padding: 20px 24px; }
