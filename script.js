@@ -87,7 +87,7 @@ function productCardHTML(p, cats, i) {
         <h3>${p.name}</h3>
         ${p.material ? `<p class="product-desc">${p.material}</p>` : ''}
         ${p.description ? `<p class="product-desc">${p.description}</p>` : ''}
-        ${p.price ? `<span class="product-price">Rs. ${Number(p.price).toLocaleString('en-IN')}</span>` : ''}
+        ${p.price ? `<span class="product-price">Starting from Rs. ${Number(p.price).toLocaleString('en-IN')}</span>` : ''}
         <div class="product-actions">
           <button class="btn-ghost small" onclick="enquireProduct('${p.name.replace(/'/g, "\\'")}'); event.preventDefault(); event.stopPropagation();">Enquire</button>
         </div>
@@ -260,7 +260,7 @@ if (document.getElementById('productDetailGrid') !== undefined && document.getEl
         <div class="product-detail-info">
           <span class="product-detail-cat">${catName}</span>
           <h1 class="product-detail-name">${product.name}</h1>
-          ${product.price ? `<div class="product-detail-price">Rs. ${Number(product.price).toLocaleString('en-IN')}</div>` : ''}
+          ${product.price ? `<div class="product-detail-price">Starting from Rs. ${Number(product.price).toLocaleString('en-IN')}</div>` : ''}
           <div class="product-detail-divider"></div>
           ${product.description ? `<p class="product-detail-desc">${product.description}</p>` : ''}
           <table class="product-spec-table">
@@ -298,7 +298,7 @@ if (document.getElementById('productDetailGrid') !== undefined && document.getEl
             <div class="product-info">
               <span class="product-cat">${catName}</span>
               <h3>${p.name}</h3>
-              ${p.price ? `<span class="product-price">Rs. ${Number(p.price).toLocaleString('en-IN')}</span>` : ''}
+              ${p.price ? `<span class="product-price">Starting from Rs. ${Number(p.price).toLocaleString('en-IN')}</span>` : ''}
             </div>
           </a>`).join('');
       }

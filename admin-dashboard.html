@@ -277,7 +277,7 @@
           <td class="td-thumb">${p.photo_url ? `<img src="${p.photo_url}" alt="${p.name}" />` : `<div class="no-img">No photo</div>`}</td>
           <td class="td-name">${p.name}</td>
           <td class="td-cat"><span>${catName(p.category)}</span></td>
-          <td class="td-price">${p.price ? 'Rs. ' + Number(p.price).toLocaleString('en-IN') : '—'}</td>
+          <td class="td-price">${p.price ? 'Starting from Rs. ' + Number(p.price).toLocaleString('en-IN') : '—'}</td>
           <td>${p.material || '—'}</td>
           <td class="td-featured"><span class="${p.featured ? 'badge-yes' : 'badge-no'}">${p.featured ? 'Yes' : 'No'}</span></td>
           <td>
