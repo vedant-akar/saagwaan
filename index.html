@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAAGWAAN — Crafted Luxury Living</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="logo.png" alt="SAAGWAAN Logo" class="logo-emblem" />
+    <span class="logo-text">SAAG<span class="logo-w">W</span>AAN</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="admin.html">Admin</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Jaipur &middot; Rajasthan</p>
+    <h1 class="hero-title">
+      Crafted for<br/>
+      <em>Refined Living</em>
+    </h1>
+    <p class="hero-sub">Bespoke solid wood furniture &amp; premium furnishings,<br/>made to order — made to last.</p>
+    <div class="hero-cta-row">
+      <a href="products.html" class="btn-primary">Explore Collection</a>
+      <a href="contact.html" class="btn-ghost">Request a Quote</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>Solid Wood Beds</span><span class="dot">&middot;</span>
+    <span>Bespoke Sofas</span><span class="dot">&middot;</span>
+    <span>Dining Tables</span><span class="dot">&middot;</span>
+    <span>Wardrobes</span><span class="dot">&middot;</span>
+    <span>Curtains &amp; Blinds</span><span class="dot">&middot;</span>
+    <span>Upholstery Fabrics</span><span class="dot">&middot;</span>
+    <span>Mattresses</span><span class="dot">&middot;</span>
+    <span>Coffee Tables</span><span class="dot">&middot;</span>
+    <span>TV Units</span><span class="dot">&middot;</span>
+    <span>Soft Furnishings</span><span class="dot">&middot;</span>
+    <span>Solid Wood Beds</span><span class="dot">&middot;</span>
+    <span>Bespoke Sofas</span><span class="dot">&middot;</span>
+    <span>Dining Tables</span><span class="dot">&middot;</span>
+    <span>Wardrobes</span><span class="dot">&middot;</span>
+    <span>Curtains &amp; Blinds</span><span class="dot">&middot;</span>
+    <span>Upholstery Fabrics</span><span class="dot">&middot;</span>
+    <span>Mattresses</span><span class="dot">&middot;</span>
+    <span>Coffee Tables</span><span class="dot">&middot;</span>
+    <span>TV Units</span><span class="dot">&middot;</span>
+    <span>Soft Furnishings</span><span class="dot">&middot;</span>
+  </div>
+</div>
+
+<section class="categories section-pad">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">What We Craft</p>
+      <h2 class="section-title">Our Collections</h2>
+    </div>
+    <div class="categories-grid" id="categoriesGrid">
+      <div class="loading-inline">Loading collections...</div>
+    </div>
+  </div>
+</section>
+
+<section class="brand-statement">
+  <div class="bs-ornament">
+    <svg viewBox="0 0 120 20" fill="none"><line x1="0" y1="10" x2="48" y2="10" stroke="#c8c0b0" stroke-width="0.6"/><circle cx="60" cy="10" r="4" stroke="#c8c0b0" stroke-width="0.6" fill="none"/><line x1="72" y1="10" x2="120" y2="10" stroke="#c8c0b0" stroke-width="0.6"/></svg>
+  </div>
+  <h2>"Crafted Luxury Living"</h2>
+  <div class="bs-ornament">
+    <svg viewBox="0 0 120 20" fill="none"><line x1="0" y1="10" x2="48" y2="10" stroke="#c8c0b0" stroke-width="0.6"/><circle cx="60" cy="10" r="4" stroke="#c8c0b0" stroke-width="0.6" fill="none"/><line x1="72" y1="10" x2="120" y2="10" stroke="#c8c0b0" stroke-width="0.6"/></svg>
+  </div>
+</section>
+
+<section class="stats-row section-pad">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-num">100<span class="stat-accent">%</span></span>
+        <span class="stat-label">Solid Wood</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">Made<span class="stat-accent">-to-</span>Order</span>
+        <span class="stat-label">Every Piece</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">Jaipur<span class="stat-accent">.</span></span>
+        <span class="stat-label">Crafted in Rajasthan</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">End<span class="stat-accent">-to-</span>End</span>
+        <span class="stat-label">Interior Solutions</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured section-pad">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Handpicked</p>
+      <h2 class="section-title">Featured Pieces</h2>
+    </div>
+    <div class="featured-grid" id="featuredGrid">
+      <div class="loading-inline">Loading...</div>
+    </div>
+    <div class="featured-cta">
+      <a href="products.html" class="btn-primary">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2>Ready to furnish your dream space?</h2>
+        <p>Every piece is crafted to your vision. Let's begin.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn-primary">Get in Touch</a>
+        <a href="https://wa.me/919829061062" class="btn-whatsapp" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.523 5.847L.057 23.5l5.816-1.527A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.651-.502-5.178-1.381l-.372-.22-3.449.905.921-3.36-.241-.386A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-text large">SAAG<span class="logo-w">W</span>AAN</span>
+        <p class="footer-tagline">Furniture &amp; Furnishing</p>
+        <p class="footer-desc">Bespoke luxury furniture &amp; home furnishings crafted in Jaipur, Rajasthan.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Collections</h4>
+        <ul id="footerCatLinks">
+          <li><a href="products.html">All Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Find Us</h4>
+        <p>Jaipur, Rajasthan, India</p>
+        <p>+91 98290 61062</p>
+        <a href="https://wa.me/919829061062" class="footer-wa">WhatsApp Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SAAGWAAN. All rights reserved.</p>
+      <p class="footer-craft">Crafted with care in Jaipur.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

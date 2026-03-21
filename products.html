@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products — SAAGWAAN</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="logo.png" alt="SAAGWAAN Logo" class="logo-emblem" />
+    <span class="logo-text">SAAG<span class="logo-w">W</span>AAN</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html" class="active">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="admin.html">Admin</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-content">
+    <p class="section-eyebrow">Our Catalogue</p>
+    <h1>The Collection</h1>
+    <p>Every piece made-to-order. Every detail considered.</p>
+  </div>
+</section>
+
+<div class="filter-bar">
+  <div class="container">
+    <div class="filter-scroll" id="filterScroll">
+      <button class="filter-btn active" data-cat="all">All</button>
+    </div>
+  </div>
+</div>
+
+<section class="products-section section-pad">
+  <div class="container">
+    <div class="products-grid grid-hidden" id="productsGrid"></div>
+    <div id="loadingState" class="display-none"></div>
+    <div id="emptyState" class="empty-state flex-hidden">
+      <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="30" stroke="#c8c0b0" stroke-width="0.8"/><line x1="25" y1="40" x2="55" y2="40" stroke="#c8c0b0" stroke-width="1.2"/><line x1="40" y1="25" x2="40" y2="55" stroke="#c8c0b0" stroke-width="1.2"/></svg>
+      <p>No products in this category yet.</p>
+      <a href="contact.html" class="btn-primary">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<div class="modal-overlay" id="enquireOverlay" onclick="closeEnquireModal()"></div>
+<div class="modal small-modal" id="enquireModal">
+  <button class="modal-close" onclick="closeEnquireModal()">&#x2715;</button>
+  <h2 class="modal-title">Enquire About</h2>
+  <p id="enquireProductName" class="enquire-product-name"></p>
+  <div class="modal-form">
+    <div class="form-group">
+      <label>Your Name</label>
+      <input type="text" id="eqName" placeholder="Full name" />
+    </div>
+    <div class="form-group">
+      <label>Phone / WhatsApp</label>
+      <input type="tel" id="eqPhone" placeholder="+91 XXXXX XXXXX" />
+    </div>
+    <div class="modal-actions">
+      <button class="btn-ghost" onclick="closeEnquireModal()">Cancel</button>
+      <button class="btn-primary" onclick="sendEnquiry()">Send via WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2026 SAAGWAAN. All rights reserved.</p>
+      <p class="footer-craft">Crafted with care in Jaipur.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

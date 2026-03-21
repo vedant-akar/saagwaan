@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product — SAAGWAAN</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="logo.png" alt="SAAGWAAN Logo" class="logo-emblem" />
+    <span class="logo-text">SAAG<span class="logo-w">W</span>AAN</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html" class="active">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="admin.html">Admin</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="product-detail">
+  <div class="container">
+    <div class="breadcrumb" id="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="products.html">Products</a>
+      <span>/</span>
+      <span id="breadcrumbName" class="breadcrumb-current">Loading...</span>
+    </div>
+    <div id="loadingState" class="page-loading">Loading product...</div>
+    <div id="notFoundState" class="empty-inline display-none">
+      Product not found. <a href="products.html" class="text-link">Back to catalogue</a>
+    </div>
+    <div class="product-detail-grid" id="productDetailGrid"></div>
+  </div>
+</section>
+
+<section class="related-section" id="relatedSection" class="display-none">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">From the Same Collection</p>
+      <h2 class="section-title">You May Also Like</h2>
+    </div>
+    <div class="featured-grid" id="relatedGrid"></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2>Interested in this piece?</h2>
+        <p>Every item is made-to-order. Get in touch to begin your project.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn-primary">Contact Us</a>
+        <a href="products.html" class="btn-ghost">View All Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2026 SAAGWAAN. All rights reserved.</p>
+      <p class="footer-craft">Crafted with care in Jaipur.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
