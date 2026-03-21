@@ -887,12 +887,13 @@
   
   .modal {
     position: fixed;
-    top: 50%; left: 50%;
+    top: 50%;
+    left: calc(240px + (100vw - 240px) / 2);
     transform: translate(-50%, -52%) scale(0.97);
     z-index: 2001;
     background: var(--bg-2);
     border: 1px solid var(--border);
-    width: 90%;
+    width: calc(90vw - 240px);
     max-width: 580px;
     padding: 50px;
     opacity: 0;
@@ -908,6 +909,13 @@
     opacity: 1;
     pointer-events: all;
     transform: translate(-50%, -50%) scale(1);
+  }
+  
+  @media (max-width: 900px) {
+    .modal {
+      left: 50%;
+      width: 90%;
+    }
   }
   
   .modal-close {
